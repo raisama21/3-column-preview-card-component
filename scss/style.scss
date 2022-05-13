@@ -1,0 +1,90 @@
+@forward "variables";
+@forward "boilerplate";
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.625rem;
+  &__items {
+    @media (min-width: 968px) {
+      display: flex;
+      min-width: 60.5rem;
+    }
+
+    max-width: 20.4375rem;
+    margin: 5.5rem 1.5rem;
+
+    p {
+      padding-block: 2.5rem;
+    }
+
+    img {
+      padding-bottom: 2.5rem;
+    }
+
+    button {
+      background-color: var(--verylightgray);
+      padding: 1rem 2.625rem;
+      border-radius: 2rem;
+      border: none;
+      font-weight: 400;
+
+      outline: 2px solid var(--verylightgray);
+      cursor: pointer;
+      transition: 250ms ease-in-out;
+
+      @media (min-width: 601.5rem) {
+        margin-top: 5.5rem;
+        font-weight: 400;
+      }
+    }
+
+    button:hover {
+      color: var(--verylightgray);
+      background-color: var(--orange);
+    }
+
+    &--sedans {
+      background-color: var(--orange);
+      padding: 3rem;
+
+      button {
+        color: var(--orange);
+      }
+
+      button:hover {
+        color: var(--verylightgray);
+        background-color: var(--orange);
+      }
+    }
+
+    &--suvs {
+      background-color: var(--darkcyan);
+      padding: 3rem;
+
+      button {
+        color: var(--darkcyan);
+      }
+
+      button:hover {
+        color: var(--verylightgray);
+        background-color: var(--darkcyan);
+      }
+    }
+
+    &--luxury {
+      background-color: var(--verydarkcyan);
+      padding: 3rem;
+
+      button {
+        color: var(--verydarkcyan);
+      }
+
+      button:hover {
+        color: var(--verylightgray);
+        background-color: var(--verydarkcyan);
+      }
+    }
+  }
+}
